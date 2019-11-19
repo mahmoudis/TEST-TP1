@@ -71,7 +71,7 @@ class GumballMachine
 	       $bdd->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 	       $sql = "INSERT INTO prof (nom, prenom, date_naissance, lieu_naissance) VALUES ('$nom','$prenom', '$date_naissance','$lieu')";
 	       $bdd->exec($sql);
-	       echo "\n We Hae a new insertion of Professor";
+	       echo "\n We Have achieved a new insertion of Professor";
 	       return true;
 	    }
 	    catch(PDOException $e)
